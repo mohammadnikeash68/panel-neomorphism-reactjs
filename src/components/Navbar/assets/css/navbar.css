@@ -1,0 +1,130 @@
+:root {
+    --box-shadow-primary: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    --box-shadow-primary-inset: inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #fff;
+    --back-color-primary: #F3F4F7;
+}
+
+.sidebar-nav {
+    /* min-height: calc(100vh - 63px); */
+    background-color: var(--back-color-primary);
+    margin-top: 63px;
+    height: auto !important;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+}
+
+.wrap-brand {
+    height: 63px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .15) !important;
+}
+
+.input-switch {
+    width: 80px;
+    height: 40px;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: var(--box-shadow-primary), var(--box-shadow-primary-inset);
+    border: 5px solid rgb(243, 244, 247);
+    position: relative;
+}
+
+.input-switch::before,
+.input-switch::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.input-switch::before {
+    width: 25px;
+    height: 25px;
+    background-color: var(--back-color-primary);
+    box-shadow: var(--box-shadow-primary);
+    border-radius: 50%;
+    left: 5px;
+    transition: .4s;
+}
+
+.input-switch::after {
+    width: 15px;
+    height: 15px;
+    background-color: var(--back-color-primary);
+    border-radius: 50%;
+    right: -30px;
+}
+
+.input-switch:checked::before {
+    left: 40px;
+}
+
+.input-switch:checked::after {
+    background-color: #55f696;
+}
+
+.logo {
+    box-shadow: var(--box-shadow-primary);
+    padding: 5px;
+    border-radius: 25px;
+
+}
+
+.logo:active {
+    box-shadow: var(--box-shadow-primary-inset);
+    /* padding: 5px; */
+    border-radius: 25px;
+}
+
+.navbar button {
+    z-index: 9999;
+}
+
+.top-nav {
+    height: 63px;
+    box-shadow: -2px 5px 3px rgba(0, 0, 0, .15) !important;
+}
+
+@media(max-width:768px) {
+    .top-nav {
+        position: static;
+    }
+
+    .sidebar-nav {
+        position: static;
+        text-align: center;
+        height: auto;
+        box-shadow: none !important;
+        margin-top: 0;
+    }
+
+    .sidebar-nav a {
+        padding-right: 0.5rem;
+    }
+
+    .wrap-brand {
+        position: static;
+    }
+}
+
+.img-profile {
+    box-shadow: var(--box-shadow-primary);
+    padding: 5px;
+}
+
+.link-sidebar:active {
+    box-shadow: var(--box-shadow-primary-inset);
+}
+.wrap-ul-sidebar .nav-link{
+    font-size: 13px;
+    padding: 2px;
+}
+.dropdown-menu[data-bs-popper]{
+    left:0 !important;
+    right:unset !important;
+}

@@ -1,0 +1,84 @@
+:root{
+    --box-shadow-primary:3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    --box-shadow-primary-inset:inset 3px 3px 6px #b8b9be,inset -3px -3px 6px #fff;
+    --back-color-primary:#F3F4F7;
+}
+@font-face {
+    font-family: "BYekan";
+    src: url('../fonts/yekan/BYekan-webfont.ttf') format('truetype'),
+    url('../fonts/yekan/BYekan-webfont.eot') format('eot'),
+    url('../fonts/yekan/BYekan-webfont.woff') format('woff');
+    font-weight: normal;
+}
+body{
+    direction: rtl;
+    text-align: right;
+    background-color: #F3F4F7 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+*{
+    font-family: "BYekan";
+}
+a{
+    text-decoration: none;
+}
+.box-shadow1{
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    -webkit-box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    -moz-box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    -ms-box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+}
+.border-horizontal{
+    height: 4px;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0 rgba(174, 174, 192, 0.4), inset -2px -2px 2px 0 rgba(255, 255, 255, 0.99);
+    background-color: rgb(243, 244, 247);
+}
+.filter-shadow{
+    filter: drop-shadow(0 0 5px black);
+}
+.text-shadow{
+    font-size: 28px;
+    color:var(--back-color-primary);
+    text-shadow: var(--box-shadow-primary);
+    /* box-shadow: var(--box-shadow-primary-inset); */
+    transition: 0.4s;
+    /* box-shadow: var(--box-shadow-primary); */
+    padding: 2px;
+}
+.color-primary{
+    color: var(--back-color-primary);
+}
+.back-color-primary{
+    background-color: var(--back-color-primary);
+}
+.box-shadow-inset{
+    box-shadow: var(--box-shadow-primary-inset) !important;
+    outline: none !important;
+}
+.box-shadow-complete{
+    box-shadow: var(--box-shadow-primary),var(--box-shadow-primary-inset) !important;
+    outline: none !important;
+}
+.form-control{
+    border: none !important;
+}
+.form-control:focus{
+    border-color: transparent !important;
+}
+.btn:active{
+    box-shadow: var(--box-shadow-primary-inset);
+    border: none;
+}
+.top-nav a:active{
+    box-shadow: var(--box-shadow-primary-inset);
+    border: none;
+}
+.border-vertical {
+    width: 4px;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 2px 0 rgba(174, 174, 192, 0.2), inset -1px -1px 1px 0 rgba(255, 255, 255, 0.7);
+    background-color: #f4f5f6;
+    height: 100%;
+  }

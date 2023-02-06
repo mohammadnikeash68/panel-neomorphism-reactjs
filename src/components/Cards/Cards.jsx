@@ -6,7 +6,7 @@ const Cards = () => {
         <div className="container-fluid">
         <div className="row">
         <div className="col-lg-4 col-md-6 col-sm-12 my-2">
-          <a href="#" className="card box-shadow1 back-color-primary border-0">
+          <a href="#" className="card box-shadow1 back-color-primary border-0 text-black">
             <div className="card-body">
                 <div className="d-flex  align-items-center justify-content-between">
                 <div className="">
@@ -14,7 +14,7 @@ const Cards = () => {
                     <div className="card-title">سبدهای خرید امروز</div>
                     <div className="card-text">سبدهای خرید مانده امروز</div>
                 </div>
-                    <div className="box-shadow-inset p-2 px-3 rounded-2">
+                    <div className="box-shadow-inset p-2 px-3 rounded-2 card-icon">
                         <i className="fas fa-shopping-cart fa-2x text-danger"></i>
                     </div>
                 </div>
@@ -23,7 +23,7 @@ const Cards = () => {
           </a>
         </div>
         <div className="col-lg-4 col-md-6 col-sm-12 my-2">
-          <a href="#" className="card box-shadow1 back-color-primary border-0">
+          <a href="#" className="card box-shadow1 back-color-primary border-0 text-black">
             <div className="card-body">
                 <div className="d-flex  align-items-center justify-content-between">
                 <div className="">
@@ -31,7 +31,7 @@ const Cards = () => {
                     <div className="card-title">سفارشات مانده امروز</div>
                     <div className="card-text">سفارشات معلق و فاقد پرداختی</div>
                 </div>
-                    <div className="box-shadow-inset p-2 px-3 rounded-2">
+                    <div className="box-shadow-inset p-2 px-3 rounded-2 card-icon">
                         <i className="fas fa-shopping-basket fa-2x text-success"></i>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ const Cards = () => {
           </a>
         </div>
         <div className="col-lg-4 col-md-6 col-sm-12 my-2">
-          <a href="#" className="card box-shadow1 back-color-primary border-0">
+          <a href="#" className="card box-shadow1 back-color-primary border-0 text-black">
             <div className="card-body">
                 <div className="d-flex  align-items-center justify-content-between">
                 <div className="">
@@ -48,7 +48,7 @@ const Cards = () => {
                     <div className="card-title">سفارشات امروز</div>
                     <div className="card-text">سفارشات کامل و دارای پرداختی</div>
                 </div>
-                    <div className="box-shadow-inset p-2 px-3 rounded-2">
+                    <div className="box-shadow-inset p-2 px-3 rounded-2 card-icon">
                         <i className="fas fa-money-bill-wave fa-2x text-warning"></i>
                     </div>
                 </div>

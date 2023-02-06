@@ -1,3 +1,14 @@
+:root{
+    --box-shadow-primary:3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+    --box-shadow-primary-inset:inset 3px 3px 6px #b8b9be,inset -3px -3px 6px #fff;
+    --back-color-primary:#F3F4F7;
+}
 #cards-dashboard .card-title,#cards-dashboard .card-text{
     font-size: 14px;
+}
+.card:hover{
+    box-shadow: var(--box-shadow-primary-inset);
+}
+.card:hover .card-icon{
+    box-shadow: var(--box-shadow-primary) !important;
 }

@@ -82,3 +82,27 @@ a{
     background-color: #f4f5f6;
     height: 100%;
   }
+ 
+  table{
+    border:none !important;
+    --bs-table-border-color:none;
+    border: 5px solid var(--back-color-primary) !important;
+    border-collapse: inherit !important;
+    --bs-table-hover-color:none !important;
+    --bs-table-hover-bg:none !important;
+    
+  }
+  tr:hover{
+    box-shadow: var(--box-shadow-primary) !important;
+  }
+  .btn-icon-close{
+    font-size: 14px;
+    box-shadow: var(--box-shadow-primary);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: red;
+  }
+  .btn-icon-close:active{
+    box-shadow: var(--box-shadow-primary-inset);
+  }

@@ -1,22 +1,39 @@
 import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Cards from './components/Cards/Cards';
 import Charts from './components/Charts/Charts';
+import Contents from './components/Contents/Contents';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
+ 
   return (
     <>
+    <BrowserRouter>
+    <nav className="navbar navbar-expand-md m-2 py-0">
+        <button
+          type="button"
+          className="navbar-toggler box-shadow1"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <div className="navbar-toggler-icon "></div>
+        </button>
+        <div className="navbar-collapse collapse " id="mynavbar">
+        <div className="container-fluid">
+            <div className="row">
     <Navbar/>
     {/* content */}
-    <div className='container-fluid'>
-      <div className='row mt-5'>
-        <div className='col-xl-10 col-lg-8 col-md-6 ms-auto mt-3'>
-          <Cards/>
-          <Charts/>
-        </div>
-      </div>
-    </div>
+    
+         <Contents/>
+         </div>
+          </div>
+         </div>
+      </nav>
+    </BrowserRouter>
+
     </>
   );
 }
